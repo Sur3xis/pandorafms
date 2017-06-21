@@ -2304,7 +2304,7 @@ function ui_get_full_url ($url = '', $no_proxy = false, $add_name_php_file = fal
 			$port = $_SERVER['SERVER_PORT'];
 		}
 	}
-	elseif ($config['https']) {
+	elseif (isset ($config['https']) ) {
 		//When $config["https"] is set, enforce https
 		$protocol = 'https';
 	}
